@@ -1,0 +1,88 @@
+/* Estilo para os cursos */
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem rgba(0, 0, 0, 0.25);
+}
+
+/* Estilo para os cursos acima */
+.courses-above,
+.courses-below {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Estilo para os cursos abaixo */
+.courses-below {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Estilo para as imagens */
+.course img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .courses-above,
+  .courses-below {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Cores dos cursos */
+.course.bg-primary-400 {
+  background-color: #333333; 
+  color: #ffffff;
+}
+
+.course.bg-secondary-400 {
+  background-color: #ff0000; 
+  color: #ffff; 
+}
+
+.course.bg-secondary-500 {
+  background-color: #ff0000; 
+  color: #ffffff;
+}
+
+
+/* Estilo para o botão */
+.btn {
+  background-color: #ffff; 
+  color: #333333; 
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #161515; /* Preto mais escuro */
+  color: #f2f2f2;
+}
+
+/* Estilo para o título da seção */
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem; 
+  color: #333333; 
+}
+
+/* Estilo para o texto e links */
+.text-neutral-100 {
+  color: #333333; 
+}
